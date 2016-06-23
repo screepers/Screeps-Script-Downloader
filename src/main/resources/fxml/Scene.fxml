@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="237.0" prefWidth="283.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.frederikam.screepsscriptdownloader.gui.FXMLController">
+   <children>
+      <TextField fx:id="emailInput" layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="188.0" promptText="Email" />
+      <PasswordField fx:id="passwordInput" layoutX="14.0" layoutY="54.0" prefHeight="25.0" prefWidth="188.0" promptText="Password" />
+      <TextField fx:id="directoryInput" layoutX="14.0" layoutY="92.0" prefHeight="25.0" prefWidth="188.0" promptText="Output folder" />
+      <Button fx:id="browseButton" layoutX="214.0" layoutY="92.0" mnemonicParsing="false" onAction="#openDirPicker" text="Browse" />
+      <Button fx:id="downloadButton" layoutX="63.0" layoutY="162.0" mnemonicParsing="false" onAction="#onDownloadClicked" text="Download Screeps Sources" />
+      <Text fx:id="label" layoutX="141.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+   </children>
+</AnchorPane>
