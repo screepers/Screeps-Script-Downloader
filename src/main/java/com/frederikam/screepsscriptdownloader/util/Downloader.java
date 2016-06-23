@@ -52,7 +52,7 @@ public class Downloader {
                         }
                         completed++;
                     }
-                    controller.setLabelText("Downloaded " + mods.length() + " files from branch " + json.getString("branch") + ".");
+                    controller.setLabelText("Downloaded " + completed + " files from branch " + json.getString("branch") + ".");
                     break;
                 case 401:
                     throw new PopupException("Invalid credentials.");
