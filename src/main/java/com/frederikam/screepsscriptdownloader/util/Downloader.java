@@ -49,8 +49,8 @@ public class Downloader {
                             FileWriter fw = new FileWriter(file);
                             fw.write(mods.getString(key));
                             fw.close();
+                            completed++;
                         }
-                        completed++;
                     }
                     controller.setLabelText("Downloaded " + completed + " files from branch " + json.getString("branch") + ".");
                     break;
