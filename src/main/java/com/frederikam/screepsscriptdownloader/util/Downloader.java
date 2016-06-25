@@ -22,7 +22,7 @@ public class Downloader {
         }
 
         if (password.equals("")) {
-            throw new PopupException("Please a password.");
+            throw new PopupException("Please enter a password.");
         }
 
         if (outputDir.isFile()) {
