@@ -13,7 +13,7 @@ import org.json.JSONObject;
 
 public class Downloader {
 
-    private static final Pattern EMAIL_PATTERN = Pattern.compile("^\\w+@.+\\.\\w+$");
+    private static final Pattern EMAIL_PATTERN = Pattern.compile("^[\\w.]+@[\\w.]+\\.[\\w.]+$");
 
     public static void download(String email, String password, File outputDir, FXMLController controller) {
         controller.setLabelText("Downloading...");
